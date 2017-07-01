@@ -11,12 +11,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 export const firebaseConfig = {
-   apiKey: "AIzaSyDmJIJbkiCblDHi2eIWSw-YVxhMu7yu0Rw",
-    authDomain: "fir-test-27a1d.firebaseapp.com",
-    databaseURL: "https://fir-test-27a1d.firebaseio.com",
-    projectId: "fir-test-27a1d",
-    storageBucket: "fir-test-27a1d.appspot.com",
-    messagingSenderId: "974124840995"
+   apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
 };
 
 @NgModule({
