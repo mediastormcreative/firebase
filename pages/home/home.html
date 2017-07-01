@@ -1,15 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Firebase Filter
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
  <ion-list>
-  <button ion-item *ngFor="let dinosaur of dinosaurs | async">
-    {{ dinosaur.weight }}
+  <button ion-item *ngFor="let dinosaur of dinosaurs | async" [hidden]="filter(dinosaur,4)">
+    Height: {{ dinosaur.height }}
   </button>  
 </ion-list>
 </ion-content>
