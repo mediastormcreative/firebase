@@ -22,13 +22,4 @@ export class HomePage {
     console.log(this.dinosaurs);
   }
 
-  filter(target, value) : boolean{
-     // Return true if I want that specified height
-     // e.g. show only dinosaurs with a height of 4
-     if (target.height == value){
-       return false;
-     }
-     return true; 
-  }
-
 }
