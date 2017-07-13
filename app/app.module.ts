@@ -9,20 +9,23 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
 
 export const firebaseConfig = {
-   apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: ""
+  apiKey: "AIzaSyDmJIJbkiCblDHi2eIWSw-YVxhMu7yu0Rw",
+  authDomain: "fir-test-27a1d.firebaseapp.com",
+  databaseURL: "https://fir-test-27a1d.firebaseio.com",
+  projectId: "fir-test-27a1d",
+  storageBucket: "fir-test-27a1d.appspot.com",
+  messagingSenderId: "974124840995"
+
 };
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -33,12 +36,13 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
